@@ -28,6 +28,9 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -151,4 +154,72 @@ button {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: 4px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-around;
+  margin: 80px 0;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  color: var(--color-blue);
+  line-height: 170px;
+  border: 2px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__icon :hover {
+  color: var(--color-pink-pink);
+  transform: rotate(30deg) scale(1.2);
+}
+
+.major__ .major__title,
+.major__description {
+  color: var(--color-dark-gray);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.education {
+  display: flex;
+  align-items: center;
+}
+
+.education__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.education__name,
+.education__period {
+  color: var(--color-light-gray);
+}
+
+.education__name {
+  font-size: var(--font-small);
+}
+
+.education__period {
+  font-size: var(--font-micro);
+}
+.education__logo {
+  width: 30px;
+  height: 30px;
 }
