@@ -13,6 +13,10 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-green1: #2e7644;
+  --color-green2: #396840;
+  --color-green4: #46563c;
+  --color-green5: #647c64;
 
   /* Font size */
   --font-large: 48px;
@@ -96,7 +100,7 @@ button {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-pink-pink);
+  background-color: var(--color-green5);
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -168,6 +172,8 @@ button {
 }
 
 /* About */
+#about {
+}
 .about__majors {
   display: flex;
   justify-content: space-around;
@@ -286,5 +292,58 @@ button {
 /* Work */
 .work__projects {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+  background-color: var(--color-white);
+  width: 350px;
+  height: 700px;
+}
+
+.project__img {
+  max-width: 350px;
+  max-height: 700px;
+}
+
+.project__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--color-black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: alll var(--animation-duration) ease;
+  transform: translateY(10px);
+}
+
+.project:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+.project__description h3 {
+  color: var(--color-white);
+}
+
+.project__description h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-left: -12px;
+  margin-top: 8px;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-dark-white);
+
+  display: black;
 }
