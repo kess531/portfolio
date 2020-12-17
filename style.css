@@ -98,12 +98,20 @@ button {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-green5);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation-duration) ease;
+}
+
+#navbar.navbar--dark{
+  background-color: var(--color-green5);
+  padding: 6px;
 }
 
 .navbar__menu {
@@ -143,7 +151,8 @@ button {
 /* Home */
 #home {
   background: url("imgs/home-background.png") center/cover no-repeat;
-  padding: 40px;
+  padding: 50px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -181,8 +190,7 @@ button {
 }
 
 /* About */
-#about {
-}
+
 .about__majors {
   display: flex;
   justify-content: space-around;
@@ -418,6 +426,4 @@ button {
     flex-direction: column;
   }
 
-  .work__container {
-  }
-}
+
