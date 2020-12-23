@@ -15,3 +15,17 @@ document.addEventListener('scroll',()=>{  //스크롤이 될때마다 등록한 
 })
 
 
+//2020.12.23 scollbar 이동
+
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click',(event)=>{
+
+const target = event.target;
+const link = event.target.dataset.link;
+    if(link == null){
+        return;
+    }
+    console.log(event.target.dataset.link);
+const scrollTo = document.querySelector(link);
+scrollTo.scrollIntoView({behavior: "smooth"});
+});
