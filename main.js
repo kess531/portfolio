@@ -35,14 +35,26 @@ const contackbtn = document.querySelector('.home__contact');
 
 
 
-//2020.12.23 scollbar 이동시 홈 투명화
+//2020.12.23 scollbar 이동시 HOME 투명화
 const home = document.querySelector('.home__container');
 const homeHeight =  home.getBoundingClientRect().height;
+const arrowup = document.querySelector('.arrow-up__btn');
+
 
 document.addEventListener('scroll',()=>{
     home.style.opacity = 1 -  window.scrollY / homeHeight;
+    // arrow-up btn
+    if(window.scrollY>homeHeight/2){
+        arrowup.classList.add('Visble');
+    }
+    else{
+        arrowup.classList.remove('Visble'); 
+    }
 });
 
+arrowup.addEventListener('click',()=>{
+    scrollIntoView('#Home');
+});
 
 
 
