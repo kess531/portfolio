@@ -14,18 +14,19 @@
     }
 });
 
-
 //2020.12.23 scollbar 이동
 
 const navbarMenu = document.querySelector('.navbar__menu');
-
-navbarMenu.addEventListener('click',(event)=>{
-    const target = event.target;
-    const link = event.target.dataset.link;
+const navbarmenuitem = document.querySelector('.navbar__menu__item');
+navbarMenu.addEventListener('click',(e)=>{
+    const target = e.target;
+    const link = e.target.dataset.link;
     if(link == null){
         return;
     }
+    
     scrollIntoView(link);
+    navbarmenuitem.classList.remove('active');
 });
 
 const contackbtn = document.querySelector('.home__contact');
@@ -58,8 +59,7 @@ arrowup.addEventListener('click',()=>{
 
 
 
-
-
+//스크롤 이동 함수
 function scrollIntoView(selector){
     const scrollTo=document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
