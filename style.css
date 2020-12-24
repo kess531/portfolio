@@ -176,7 +176,7 @@ button {
 
 /* Home */
 #Home {
-  background: url("imgs/background.png") center/cover no-repeat;
+  background: url("imgs/backgroundimg.png") center/cover no-repeat;
   padding: 50px;
   padding-top: 120px;
   text-align: center;
@@ -207,6 +207,9 @@ button {
   border-radius: 4px;
 }
 
+.home__contact:hover{
+  background-color: var(--color-orange);
+}
 .section {
   text-align: center;
   padding: 50px;
@@ -436,6 +439,17 @@ button {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root{
+
+  /* Font-size */
+  --font-large: 25px;
+  --font-medium: 16px;
+  --font-regular: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+
   .navbar__toggle-btn {
     display: block;
     
@@ -447,6 +461,11 @@ button {
     background-color: var(--color-orange);
   }
 
+ .section
+  {
+    padding:16px;
+  }
+
   .navbar__menu {
     flex-direction: column;
     text-align: center;
@@ -456,16 +475,40 @@ button {
   .navbar__menu.open{
     display: block;
   }
+  .home__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px var(--color-light-white);
+  }
+  
+
   .about__majors {
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
+  .project__img {
+    max-width: 300px;
+    max-height: 700px;
+  }
 
+  .arrow-up__btn{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+
+    font-size:var(--font-medium);
+
+  }
