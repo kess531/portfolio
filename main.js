@@ -14,6 +14,7 @@
     }
 });
 
+
 //2020.12.23 scollbar 이동
 
 const navbarMenu = document.querySelector('.navbar__menu');
@@ -24,9 +25,9 @@ navbarMenu.addEventListener('click',(e)=>{
     if(link == null){
         return;
     }
-    
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
-    navbarmenuitem.classList.remove('active');
+    
 });
 
 const contackbtn = document.querySelector('.home__contact');
@@ -34,6 +35,12 @@ const contackbtn = document.querySelector('.home__contact');
     scrollIntoView('#Contack');
 });
 
+// Navbar toggle button for smaall screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click',()=>{
+navbarMenu.classList.toggle('open');
+console.log(navbarMenu);
+});
 
 
 //2020.12.23 scollbar 이동시 HOME 투명화
