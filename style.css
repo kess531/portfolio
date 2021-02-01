@@ -26,6 +26,7 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+  --font-icon:64px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -107,7 +108,7 @@ button {
   height: 50px;
   font-size:var(--font-medium);
   color: var(--color-white);
-  background-color: var(--color-orange);
+  background-color: var(--color-green1);
   opacity: 0;
   border-radius: 50%;
   pointer-events: none;
@@ -136,7 +137,7 @@ button {
 }
 
 #navbar.navbar--dark{
-  background-color: var(--color-orange);
+  background-color: var(--color-green5);
   padding: 6px;
 }
 
@@ -162,7 +163,7 @@ button {
 
 .navbar__menu__item:hover {
   color: var(--color-white);
-  background-color: var(--color-dark-orange);
+  background-color: var(--color-green1);
 }
 
 .navbar__toggle-btn {
@@ -208,7 +209,7 @@ button {
 }
 
 .home__contact:hover{
-  background-color: var(--color-orange);
+  background-color: var(--color-green1);
 }
 .section {
   text-align: center;
@@ -235,7 +236,7 @@ button {
 .major__icon {
   width: 170px;
   height: 170px;
-  font-size: 70px;
+  font-size: var(--font-icon);
   color: var(--color-gray);
   line-height: 170px;
   border: 2px solid var(--color-gray);
@@ -243,7 +244,7 @@ button {
   margin-bottom: 16px;
 }
 .major__icon :hover {
-  color: var(--color-orange);
+  color: var(--color-green5);
   transform: rotate(30deg) scale(1.2);
 }
 
@@ -288,58 +289,31 @@ button {
   background-color: var(--color-light-white);
 }
 
-.skillset {
+.skill{
   display: flex;
-  background-color: var(--color-light-white);
-  color: var(--color-white);
-  margin: 20px;
+  justify-content: left;
 }
 
-.skillset__title {
-  margin: 0;
-  color: var(--color-white);
+.skill__title{
+  text-align: left;
+  border-bottom: .05px black solid;
+  margin-top: 0;
 }
 
-.skillset__left {
-  flex-basis: 60%;
-  background-color: var(--color-dark-gray);
-  padding: 20px 40px;
+.skill__icon{
+width: 64px;
+height: 64px;
+font-size: var(--font-icon);
+}
+.skill__icon :hover {
+  transform:  scale(1.1);
 }
 
-.skill__description {
-  display: flex;
-  justify-content: space-between;
+.skill__category{
+  margin: 0 30px;
 }
 
-.skill {
-  margin-bottom: 32px;
-}
 
-.skill__bar {
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-gray);
-}
-
-.skill__value {
-  width: 100%;
-  height: 3px;
-  background-color: var(--color-orange);
-}
-.skillset__right {
-  flex-basis: 40%;
-}
-
-.tools {
-  background-color: var(--color-gray);
-}
-.etc {
-  background-color: var(--color-light-gray);
-}
-.tools,
-.etc {
-  padding: 30px;
-}
 
 /* Work */
 .work__projects {
@@ -381,12 +355,18 @@ button {
   transform: translateY(10px);
 }
 
+.project__description li {
+  text-align: left;
+  margin-left: 20px;
+
+}
+
 .project:hover .project__description {
   opacity: 0.8;
   transform: translateY(0px);
 }
 .project__description h3 {
-  color: var(--color-orange);
+  color: var(--color-green1);
 }
 
 .project__description h3:after {
@@ -434,7 +414,7 @@ button {
 
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-orange);
+  color: var(--color-green1);
 
 }
 
@@ -459,7 +439,7 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-orange);
+    background-color: var(--color-green1);
   }
 
  .section

@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio">
     <meta name="author" content="wan">
     <script src="https://kit.fontawesome.com/26b2ef94cb.js" crossorigin="anonymous"></script>  <!-- fontawesome-->
-    <link rel="icon" type="image/png" href="imgs/favicon1.png"> <!-- 아이콘-->
+    <link rel="icon" type="image/png" href="imgs/favicon3.png"> <!-- 아이콘-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> <!-- 폰트 -->
     <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">   
-            <i class="fas fa-leaf"></i>
+            <i class="fas fa-code"></i>
   
             <a href="#">YKW</a>
         </div>
@@ -42,8 +42,9 @@
     <section id="Home">
         <div class="home__container">
             <img src="imgs/YKW1.jpg" alt="wan profile photo" class="home__avatar">
-            <h1 class="home__title">안녕하세요, <br> 저는 유경완입니다.</h1>
-            <h2 class="home__description">Web Master</h2>
+            <h1 class="home__title">I want to make things<br>
+                that make a difference.</h1>
+            <h2 class="home__description">Junior Developer</h2>
             <button class="home__contact">Contact Me</button>
         </div>
 
@@ -52,42 +53,34 @@
     <section id="About" class="section section__container">
         <h1>About me</h1>
         <p>
-            유한대학교 졸업 예정이고 프론트앤드 개발에 관심이 많습니다.
-            항상 배우려는 자세와 노력하는 자세로 최선을 다하겠습니다. 
+            Html로 처음 나만의 홈페이지를 만들었을때 개발에 흥미를 느꼈습니다.<br/><br/>
+            새로운 기술에 거부감없이 적극적으로 공부하며 눈으로 보는것에 그치지 않고 직접 실습해보며 성장해나가고있습니다.
         </p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
-                <i class="fab fa-html5"></i>
+                    <i class="fas fa-comment-dots"></i>
                 </div>
                 <h2 class="major__title">
-                Front-end
+                소통
                 </h2>
-                <div class="major__description">
-                HTML, CSS, JavaScript
-                </div>
                 </div>
                 <div class="major">
                 <div class="major__icon">
-                <i class="fab fa-java"></i>
+                    <i class="fas fa-fist-raised"></i>
                 </div>
                 <h2 class="major__title">
-                Java
+                끈기
                 </h2>
-                <div class="major__description">
-                Jsp,Spring FrameWork
-                </div>
+
                 </div>
                 <div class="major">
                 <div class="major__icon">
-                <i class="fas fa-server"></i>
+                    <i class="fas fa-fire"></i>
                 </div>
                 <h2 class="major__title">
-                C#
+                도전
                 </h2>
-                <div class="major__description">
-                ASP.NET
-                </div>
                 </div>
         </div>
         <div class="about__education">
@@ -105,83 +98,60 @@
     <section id="Skills" class="section">
         <div class="section__container">
             <h1>Skills</h1>
-            <h2>Skill & Attributes</h2>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, soluta libero.<br<>
-                Quia aspernatur odit nihil quae corporis? Ducimus, ipsa eos.
-            </p>
-    
-            <div class="skillset">
-                <div class="skillset__left">
-                    <h3 class="skillset__title">Skills</h3>
-                    <div class="skill">
-                        <div class="skill__description">
-                            <span>HTML</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                        </div>
-                        <div class="skill">
-                        <div class="skill__description">
-                            <span>CSS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 80%;"></div>
-                        </div>
-                        </div>
-                        <div class="skill">
-                        <div class="skill__description">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 50%;"></div>
-                        </div>
-                        </div>
-                        <div class="skill">
-                        <div class="skill__description">
-                            <span>JSP</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 50%;"></div>
-                        </div>
-                        </div>
-                        <div class="skill">
-                        <div class="skill__description">
-                            <span>ASP</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="skill__bar">
-                            <div class="skill__value" style="width: 50%;"></div>
-                        </div>
-                        </div>
-                        
+            <h2 class="skill__title">Front-End</h2>
+            <div class="skill">    
+                    <div class="skill__category">
+                        <i class="skill__icon"><img class="icon__img" src="skills/html.png" alt="#"></i>
+                        <div class="skill__description"><span >HTML</span> </div>
+                    </div> 
+                    <div class="skill__category">
+                        <i class="skill__icon"><img class="icon__img" src="skills/css.png" alt="#"></i>
+                        <div class="skill__description"><span >CSS</span> </div>
+                    </div>
+                    <div class="skill__category">
+                        <i class="skill__icon"><img class="icon__img" src="skills/js.png" alt="#"></i>
+                        <div class="skill__description"><span >JavaScript</span> </div>
+                    </div>
+                    <div class="skill__category">
+                        <i class="skill__icon"><img class="icon__img" src="skills/bootstrap.png" alt="#"></i>
+                        <div class="skill__description"><span >Bootstrap</span> </div>
+                    </div>
+                </div>
+                <h2 class="skill__title">Back-End</h2>
+            <div class="skill">  
+                <div class="skill__category">
+                    <i class="skill__icon"><img class="icon__img" src="skills/java.png" alt="#"></i>
+                    <div class="skill__description"><span >Java</span> </div>
+                </div>
+                <div class="skill__category">
+                    <i class="skill__icon"><img class="icon__img" src="skills/c.png" alt="#"></i>
+                    <div class="skill__description"><span >C#</span> </div>
+                    </div>
+                <div class="skill__category">
+                <i class="skill__icon"><img class="icon__img" src="skills/oracle.png" alt="#"></i>          
+                <div class="skill__description"><span >Oracle</span> </div>
+                </div>
+                <div class="skill__category">
+                    <i class="skill__icon"><img class="icon__img" src="skills/mysql.png" alt="#"></i>   
+                    <div class="skill__description"><span >MySQL</span> </div>  
+                    </div>
                     
+        </div>
+        <h2 class="skill__title">Tools</h2>
+        <div class="skill"> 
+            <div class="skill__category">
+                <i class="skill__icon"><img class="icon__img" src="skills/git.png" alt="#"></i>   
+                <div class="skill__description"><span >GitHub</span> </div>
                 </div>
-                <div class="skillset__right">
-                    <div class="tools">
-                        <h3 class="skillset__title">Tools</h3>
-                        <ul class="tools__list">
-                            <li><span>Visual Studio</span></li>
-                            <li><span>Eclipse</span></li>
-                            <li><span>Adobe Photoshop</span></li>
-                            <li><span>Atom</span></li>
-                            <li><span>Visual Studio Code</span></li>
-                            
-                        </ul>
+                <div class="skill__category">
+                    <i class="skill__icon"><img class="icon__img" src="skills/photoshop.png" alt="#"></i>  
+                    <div class="skill__description"><span >Adobe Photoshop</span> </div>
                     </div>
-                    <div class="etc">
-                        <h3 class="skillset__title">Etc</h3>
-                        <ul class="etc__lust">
-                            <li><span>Git</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                        </div>
+            
+        </div>
+
+
         </div>
 
     </section>
@@ -191,26 +161,28 @@
         <h1>My Work</h1>
         <h2>Project</h2>
         <div class="work__projects">
-            <a href="https://github.com/1102jhc/Youtube-Crawler" class="project" target="blank">
-        <img src="imgs/projects/YoutubeCrawler.png" alt="YoutubeCrawler" class="project__img">
-        <div class="project__description">
-            <h3>Youtube-Crawler</h3>
-            <span>Youtube API를 사용해 만든 유튜브 크롤링 프로그램</span>
-        </div>
-    </a> 
-        <a href="https://github.com/kess531/portfolio" class="project" target="blank">
-        <img src="imgs/projects/MRD.png" alt="Mrd" class="project__img">
-        <div class="project__description">
-            <h3>Monster Random Deffence</h3>
-            <span>java를 사용한 랜덤 디펜스 게임</span>
-        </div>
-    </a>
-        <a href="https://github.com/kess531/LikesMovie" class="project" target="blank">
-        <img src="imgs/projects/LikeMovie.png" alt="LikeMovie" class="project__img">
-        <div class="project__description">
-            <h3>LikeMovie</h3>
-            <span>Spring을 사용해 만든 영화 리뷰 웹사이트</span>
-        </div>
+            <a href="https://github.com/kess531/MovieLikes" class="project" target="blank">
+                <img src="imgs/projects/LikeMovie.png" alt="LikeMovie" class="project__img">
+                <div class="project__description">
+                    <h3><b>Movie Likes</b></h3>
+                    <li><span>Front-End : <b>Bootstrap</b>  </span></li>
+                    <li><span>Back-End :  <b>Spring Framework</b></span></li>
+                    <li><span>DB : <b>Oracle DB</b>  </span></li>
+                </div>
+            </a>
+            <a href="https://github.com/kess531/Youtube-Crawler" class="project" target="blank">
+                <img src="imgs/projects/YoutubeCrawler.png" alt="YoutubeCrawler" class="project__img">
+                <div class="project__description">
+                    <h3><b>Youtube-Crawler</b></h3>
+                    <li><span>Built using <b>C#, YoutubeDataAPI</b>  </span></li>
+                </div>
+            </a> 
+            <a href="https://github.com/kess531/Defence-Game" class="project" target="blank">
+                <img src="imgs/projects/MRD.png" alt="Mrd" class="project__img">
+                <div class="project__description">
+                    <h3><b>Monster Random Deffence</b></h3>
+                    <li><span>Built using <b>Java, FIREBASE, JSON</b>  </span></li>
+                </div>
     </a>
     </div>
     </section>
@@ -221,9 +193,6 @@
         <div class="contact__links">
         <a href="https://github.com/kess531" target="blank">
             <i class="fab fa-github"></i>
-        </a>
-        <a href="#" target="blank">
-            <i class="fab fa-linkedin"></i>
         </a>
     </div>
     </section>
