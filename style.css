@@ -108,7 +108,7 @@ button {
   height: 50px;
   font-size:var(--font-medium);
   color: var(--color-white);
-  background-color: var(--color-green1);
+  background-color: var(--color-green2);
   opacity: 0;
   border-radius: 50%;
   pointer-events: none;
@@ -137,7 +137,7 @@ button {
 }
 
 #navbar.navbar--dark{
-  background-color: var(--color-green5);
+  background-color: var(--color-green2);
   padding: 6px;
 }
 
@@ -244,7 +244,7 @@ button {
   margin-bottom: 16px;
 }
 .major__icon :hover {
-  color: var(--color-green5);
+  color: var(--color-green2);
   transform: rotate(30deg) scale(1.2);
 }
 
@@ -439,7 +439,7 @@ font-size: var(--font-icon);
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-green1);
+    background-color: var(--color-green2);
   }
 
  .section
@@ -475,9 +475,10 @@ font-size: var(--font-icon);
     margin-bottom: 30px;
   }
 
-  .skillset {
-    flex-direction: column;
-  }
+.skill{
+  flex-direction: column;
+  align-items: center;
+}
   .project__img {
     max-width: 300px;
     max-height: 700px;
@@ -489,7 +490,5 @@ font-size: var(--font-icon);
     right: 16px;
     width: 40px;
     height: 40px;
-
     font-size:var(--font-medium);
-
   }
