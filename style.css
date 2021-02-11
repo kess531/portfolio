@@ -291,7 +291,7 @@ button {
 
 .skill{
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 .skill__title{
