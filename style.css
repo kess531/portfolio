@@ -191,6 +191,7 @@ button {
   height: 250px;
   border-radius: 50%;
   border: solid 2px var(--color-light-white);
+  object-fit: cover;
 }
 
 .home__title,
